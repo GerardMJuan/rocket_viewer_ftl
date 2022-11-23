@@ -22,11 +22,11 @@
 # Sergio Sánchez Martínez
 */
 
-import Papaparse from 'babyparse';
+const Papa = require('papaparse');
 
 export function convert_csv_in_json(csv) {
 
-    var data = Papaparse.parse(csv, {
+    var data = Papa.parse(csv, {
         delimiter: "",	// auto-detect
         newline: "",	// auto-detect
         header: true,
